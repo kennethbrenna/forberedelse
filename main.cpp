@@ -2,14 +2,32 @@
 #include "include/Car.h"
 #include "include/MotorCycle.h"
 #include "include/Bus.h"
+
 #include <iostream>
+#include <vector>
+
+int findMissingNumber(std::vector<int> list) {
+    int n = list.size();
+    for (int i = 1; i < n; i++) {
+        int target = i;
+
+        std::vector<int>::iterator it = std::find(list.begin(), list.end(), target);
+        if (it == list.end())
+            std::cout << "Tallet som mangler er " << target << std::endl;
+        else
+            std::cerr << "Det mangler ingen tall fra lista" << std::endl;
+        break;
+    }
+
+}
 
 
 int main() {
 
+    std::vector<int> myVec = {1, 3, 5, 2, 6, 8, 7, 4};
+    findMissingNumber(myVec);
 
 
-//dette er bare en test
 
 
 
