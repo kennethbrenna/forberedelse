@@ -6,7 +6,18 @@
 
 
 int main() {
-    try {
+
+
+
+
+
+
+
+
+
+
+
+/* try {
 
         //Veichles are initialized with veichleType, regNumber, model and lastly colour
         Bus bus1("Bus", "JK74955", 2005, "White", 76);
@@ -15,14 +26,10 @@ int main() {
 
         MotorCycle motorCycle1("Motorcycle", "UR02843", 2010, "Red");
 
-       car1.printInfo();
-
-       bus1.howManySeatsLeft(23);
     }
 
     catch (std::runtime_error &e) {
         std::cerr << "Caught exception: " << e.what() << std::endl;
-    }
-
+    } */
 
 }
